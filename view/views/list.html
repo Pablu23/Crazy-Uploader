@@ -12,6 +12,7 @@
       width: 100%;
       margin-left: auto;
       margin-right: auto;
+      text-align: center;
     }
 
     td {
@@ -23,6 +24,9 @@
 <p>
   Hello World
 </p>
+<button onclick='alert("Hello World")' class="button">
+  HALLOO SDOADOSD
+</button>
 
 <table>
   <thead>
@@ -34,14 +38,14 @@
         Age
       </th>
     </tr>
-  <tbody>
-    <tr hx-get="/test" hx-trigger="revealed" hx-swap="innerHTML">
-      <td>
-        Max Mustermann
-      </td>
-      <td>
-        99
-      </td>
-    </tr>
+  <tbody hx-get="/test" hx-trigger="revealed" hx-swap="innerHTML">
+    <!-- <tr> -->
+    <!--   <td> -->
+    <!--     Max Mustermann -->
+    <!--   </td> -->
+    <!--   <td> -->
+    <!--     99 -->
+    <!--   </td> -->
+    <!-- </tr> -->
   </tbody>
 </table>
